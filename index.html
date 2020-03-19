@@ -1,0 +1,97 @@
+<title><meta name="viewport" content="width=device-width, initial-scale=1.0"> Aesculap Academy E-learning Survey Form</title>
+<html>
+ <main>
+   <body>
+      <h1 id="title">Aesculap Academy E-learning Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form" action="/my-handling-form-page" method="post">
+          <div id="innerElements">
+          <label for="name-label">Name</label>
+         <p> <input type="text" id="name" placeholder="Enter your name" required>
+          </p>
+          <div>
+            <label for="email-label">Email</label>
+            <p><input type="email" id="email" placeholder="Enter your Email" required></p>
+                   </div>
+          <div>
+            <label for="number-label">Age (optional)</label>
+         <p> <input type="number" id="age" min="18" max="99" placeholder="Age"</p>
+                    </div>
+            <div>
+              <label for="dropdown-specialization">What is your specialization?</label>
+              <p>
+                   <input list="dropdown" id= "specialization" placeholder="Select your spesialization">    
+                   <datalist id="dropdown">
+                    <select required="required">
+                      <option>Anaesthesia</option>
+                      <option>Cardiology</option>
+                      <option>Cardiac Surgery</option>
+                      <option>Neurosurgery</Option>
+                      <option>Oncology</option>
+                      <option>Spinal Surgery</option>
+                      <option>Urology</option>
+                     </p>
+                    </select>
+
+                    </div>
+            <div class="radio"
+                   <label for="radio-buttons">Would you recommend Aesculap Academy E-learning Platform to your colleagues?</label>
+          <p>
+           <input type="radio" name="option" value="Definitely" checked> Definitely
+            <br>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="option" value="Maybe"> Maybe
+                      <br>
+                    </label>
+          
+                    <label>
+                      <input type="radio" name="option" value="Not sure"> Not sure
+                      </p>
+          <div>
+                    <label for="dropdown-feature">What is your favourite feature of Aesculap Academy E-learning Platform? </label>
+            <p>
+                   <input list="dropdown-feature" id="feature" placeholder="Select an option">    
+                   <datalist id="dropdown-feature">
+                    <select required="required">
+                      <option value="A large number of topics">
+                        <option value="Accrual of CME points">
+                      <option value="Challenges">
+                      <option value="Community">
+                      <option value="Interactivity">
+                    </select>
+                     <p/>
+                   </div>
+            <div>
+                      <label for="Course content">What would you like to see improved? (Check all that apply)</label>
+              <p>
+                        <input id="Course content" type="checkbox" value="Course content" checked="checked">Course content
+                <br>
+                      </label>
+                          <label for="Data Visualization">
+                        <input id="Data Visualization" type="checkbox" value="Data Visualization">Data Visualization
+                            <br>
+                      </label>
+                      <label for="Challenges">
+                        <input id="Challenges" type="checkbox" value="Challenges">Challenges
+                        <br>
+                      </label>
+                     <label for="Forum">
+                        <input id="Forum" type="checkbox" value="Forum">Forum
+                       <br>
+                       </p>
+            </div>
+            <div>
+              <label for ="msg"></label>
+              <p>Do you have any comments or suggestions?</p>
+      <textarea name="comments" placeholder="Enter your comment here..."></textarea>
+            </div>
+  <div id="button">
+             <button type="submit">Submit</button>    
+  </div>
+   </div>
+            </form>
+   </body> 
+  </main>
+  </html>
